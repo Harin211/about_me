@@ -1,0 +1,65 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+
+  background: linear-gradient(-45deg, #0f3f86, #6a11cb, rgb(190, 173, 19), #203a43);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-image: url(RR-v-jan-2019-135.jpg);
+
+  /* animation: gradientShift 15s ease infinite; */
+}
+
+/* Keyframes for gradient movement */
+/* @keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+} */
+
+
+
+.row1 {
+    margin: 20px;
+    display: flexbox;
+    justify-content: space-around;
+}
+
+
+.header h1 {
+    color:goldenrod;
+    font-size: 80px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.header p {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: goldenrod;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.details {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.details div {
+    background-color: rgba(255,255,255,0.2); /* just for visual clarity */
+    padding: 20px;
+    width: 40%;                  /* or whatever width you want */
+    border-radius: 10px;
+}
