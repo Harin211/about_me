@@ -1,20 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const dropBtn = document.querySelector('.dropbtn');
-  const dropdown = document.querySelector('.dropdown-content');
+  // Select all dropdown containers (both interests & projects)
+  const dropdownContainers = document.querySelectorAll('.interests, .projects');
 
-  // Ensure dropdown is hidden on page load
-  dropdown.style.display = 'none';
+  dropdownContainers.forEach(container => {
+    const button = container.querySelector('.dropbtn');          // the button
+    const content = container.querySelector('.dropdown-content, .projs'); // the content
 
-  // Toggle dropdown on button click
-  dropBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // Prevent window click from immediately hiding it
-    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    // Hide content on load
+    if (content) content.style.display = 'none';
+
+    // Toggle dropdown on button click
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // Toggle this one
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
   });
 
-  // Hide dropdown when clicking outside
+  // Hide dropdowns when clicking outside
   window.addEventListener('click', (e) => {
-    if (!e.target.closest('.interests')) {
-      dropdown.style.display = 'none';
+    if (!e.target.closest('.interests') && !e.target.closest('.projects')) {
+      document.querySelectorAll('.dropdown-content, .projs').forEach(d => {
+        d.style.display = 'none';
+      });
     }
   });
 });
