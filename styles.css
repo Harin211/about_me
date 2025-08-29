@@ -46,7 +46,7 @@ body {
 }
 
 .header p {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     background-color: blanchedalmond;
@@ -175,4 +175,8 @@ body {
   border-radius: 0 0 100px 100px; /* curve only the bottom */
   margin: 40px auto 0 auto;    /* center it below the nose */
 }
+
+/* .bioinfo {
+  font-size: 35px;
+} */
 
