@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = container.querySelector('.dropbtn');          // the button
     const content = container.querySelector('.dropdown-content, .projs'); // the content
 
-    // Hide content on load
     if (content) content.style.display = 'none';
 
     // Toggle dropdown on button click
@@ -25,4 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
+
 });

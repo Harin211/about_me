@@ -24,7 +24,7 @@ body {
 
 .image {
   width: 100%;
-  height: 100vh; /* full page */
+  min-height: 100vh; /* full page */
   background-image: url('your-image.jpg');
   background-size: cover;       /* fills container without repeating */
   background-position: center;
@@ -176,7 +176,75 @@ body {
   margin: 40px auto 0 auto;    /* center it below the nose */
 }
 
-/* .bioinfo {
-  font-size: 35px;
-} */
 
+.skills {
+
+  /* margin-top: 100px;
+  margin-left: 100px; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 200px;
+
+}
+
+.list-skills {
+    /* margin-top: 100px; */
+    /* margin-left: 155px; */
+    color: aliceblue;
+    background-color: goldenrod;
+    height: 400px;
+    width: 250px;
+    font-size: 30px;
+    border-radius: 40%;
+    border: 2px solid;
+    border-color: wheat;
+    cursor: pointer;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 👈 everything starts at the top */
+  align-items: flex-start;     /* 👈 keep content left-aligned */
+  margin-top: 30px;
+  background-color: goldenrod;
+  width: 400px;
+  height: 300px;
+  padding: 20px;               /* give breathing space */
+  box-sizing: border-box;      /* makes padding not break width */
+  border: 5px solid wheat;
+  border-radius: 20%;
+}
+
+
+.skill-content .ul {
+  text-align: left;
+}
+
+.skill-content h2 {
+  margin: 0 0 10px 0; /* tighten heading spacing */
+}
+
+.skill-content ul {
+  margin: 0;
+  padding-left: 20px; /* nice indentation for bullets */
+}
+
+.skill-content li {
+  margin: 5px 0;
+}
+
+.skill-content ul {
+  list-style: none;
+  padding-left: 0;  /* removes the indent */
+  margin-left: 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+.skill-content h2 {
+  border: 5px solid;
+  border-color: wheat;
+}
