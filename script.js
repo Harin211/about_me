@@ -25,4 +25,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+const skillButton = document.querySelector('.list-skills');
+const skillContents = document.querySelectorAll('.skill-content');
+
+skillButton.addEventListener('click', () => {
+  skillContents.forEach(box => {
+    box.style.display = (box.style.display === 'none' || box.style.display === '') 
+    if (box.style.display === 'none' || box.style.display === '') {
+      box.style.display = 'flex';
+    } else {
+      box.style.display = 'none';
+    }
+
+  });
+});
+
+
 });

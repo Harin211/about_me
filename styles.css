@@ -203,7 +203,7 @@ body {
 }
 
 .skill-content {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start; /* 👈 everything starts at the top */
   align-items: flex-start;     /* 👈 keep content left-aligned */
