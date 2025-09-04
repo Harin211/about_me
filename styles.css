@@ -274,3 +274,7 @@ body {
 a {
   text-decoration: none;
 }
+
+.star {
+  opacity: 0.8;
+}
