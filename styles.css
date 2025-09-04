@@ -12,19 +12,13 @@ body {
 
   background-image: url(RR-v-jan-2019-135.jpg);
 
-  /* animation: gradientShift 15s ease infinite; */
+  
 }
 
-/* Keyframes for gradient movement */
-/* @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-} */
 
 .image {
   width: 100%;
-  min-height: 100vh; /* full page */
+  min-height: 100vh; 
   background-image: url('your-image.jpg');
   background-size: cover;       /* fills container without repeating */
   background-position: center;
@@ -68,11 +62,10 @@ body {
 }
 
 .details div {
-   /* background-color: rgba(185, 16, 16, 0.2); /* just for visual clarity */
     display: flex;
     justify-content: center;
     padding: 20px;
-    width: 40%;                 /* or whatever width you want */
+    width: 40%;                
     border-radius: 10px;
 }
 
@@ -168,11 +161,11 @@ body {
 }
 
 .mouth {
-  width: 400px;                /* how wide the smile is */
+  width: 400px;               
   height: 100px;               /* how tall */
   border: 10px solid goldenrod; /* color of smile */
   border-top: none;            /* hide the top border */
-  border-radius: 0 0 100px 100px; /* curve only the bottom */
+  border-radius: 0 0 100px 100px; 
   margin: 40px auto 0 auto;    /* center it below the nose */
 }
 
@@ -184,7 +177,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 
 }
 
@@ -247,4 +240,33 @@ body {
 .skill-content h2 {
   border: 5px solid;
   border-color: wheat;
+}
+
+.links {
+  margin: auto;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.current {
+  align-self: center;
+  margin: auto;
+  font-size: 40px;
+  color: goldenrod;
+  background-color: beige;
+  height: 50px;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  color: goldenrod;
 }
